@@ -27,14 +27,11 @@ public class SinglyLinkedList {
         } else {
 
             Node currNode = head;
-            Node previous = currNode;
             
-            while(currNode.next != null){
-                previous = currNode;
+            while(currNode.next.next != null){
                 currNode = currNode.next;
             }
             
-            currNode = previous;  
             currNode.next = null;
 
         }
